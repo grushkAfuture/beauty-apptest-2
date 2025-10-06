@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRUSHKA — Онлайн запись</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-y: auto; /* ✅ возвращает скролл */
+    }
+
+    header {
+      width: 100%;
+      background-color: #2b3c6f; /* ✅ твой фирменный цвет */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      height: 70px;
+      max-width: 90%;
+      object-fit: contain;
+    }
+
+    h1 {
+      color: #2b3c6f;
+      font-size: 26px;
+      margin: 20px 0 8px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #555;
+      margin-bottom: 25px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .button {
+      background-color: #2b3c6f; /* ✅ цвет кнопок */
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 8px 0;
+      width: 100%;
+      text-align: center;
+      color: white; /* белый текст */
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .button:hover {
+      background-color: #384a8a;
+      transform: translateY(-2px);
+    }
+
+    .footer-note {
+      border: 1px solid #2b3c6f; /* ✅ рамка в фирменном цвете */
+      border-radius: 10px;
+      padding: 12px;
+      margin-top: 25px;
+      text-align: center;
+      font-size: 14px;
+      background: #fff;
+      width: 85%;
+      color: #2b3c6f; /* ✅ текст в тон */
+      line-height: 1.4;
+    }
+
+    footer {
+      margin: 25px 0;
+      text-align: center;
+      color: #2b3c6f;
+      font-size: 15px;
+    }
+
+    @media (max-width: 500px) {
+      header img {
+        height: 60px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      .button {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="grushka-logo.png" alt="Логотип GRUSHKA">
+  </header>
+
+  <h1>Онлайн запись — GRUSHKA</h1>
+  <h2>ЕКБ GRUSHKA — Белинского 32</h2>
+
+  <div class="container">
+    <div class="button">Выбрать специалиста</div>
+    <div class="button">Выбрать дату и время</div>
+    <div class="button">Выбрать услугу</div>
+    <div class="button">Исполняем ваши желания</div>
+  </div>
+
+  <div class="footer-note">
+    Имеются противопоказания. Необходима консультация специалиста.
+  </div>
+
+  <footer>
+    Мы создаем красоту, которой доверяют звезды!
+  </footer>
+
+</body>
+</html>
